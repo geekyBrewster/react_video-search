@@ -6,15 +6,10 @@ const VideoItem = ({video, onVideoSelect}) => {
     return(
          <div className="video-item item" onClick={() => onVideoSelect(video)}>
              <div className="ui small image">
-                 <img src={video.snippet.thumbnails.default.url} alt={video.snippet.description}/>
+                 <img src={video.snippet.thumbnails.default.url} alt={video.snippet.title}/>
              </div>
              <div className="content">
-                 <div className="header">
-                    <p>{video.snippet.title}</p>
-                 </div>
-                <div className="description">
-                    {video.snippet.description}
-                </div>
+                {video.snippet.title}
             </div>
         </div>
     );
