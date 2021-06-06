@@ -1,0 +1,5 @@
+.video-item {
+    display: flase !important;
+    align-items: center !important;
+    cursor: pointer;
+}
